@@ -1,12 +1,18 @@
 import React from "react";
+import "./NavBar.css";
 
 function NavBar() {
-  
+
+  let crestUrl = process.env.REACT_APP_BACKEND_PORTAL + "/images/YB.svg";
   return (
     <>
-    <div className="nav-bar">
-      
-    </div>
+      <div className="nav-bar">
+        <div className="nav-bar-heading">
+          <h1>Yasu</h1>
+          <img className="nav-crest" src={crestUrl} alt="YB" />
+          <h1> Bharathi</h1>
+        </div>
+      </div>
     </>
   );
 }

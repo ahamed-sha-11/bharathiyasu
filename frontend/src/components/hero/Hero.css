@@ -2,6 +2,7 @@
   width: 100vw;
   height: 90vh;
 }
+
 .hero-content {
   display: flex;
   width: 100%;
@@ -20,13 +21,11 @@
   height: 100%;
   object-fit: cover;
   filter: grayscale(1) contrast(1.4) brightness(1);
-  /* mix-blend-mode: multiply; */
 }
 
 .hero-desc {
   width: 50%;
   height: 100%;
-  object-fit: contain;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,7 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: "Newsreader", "serif";
+  font-family: "Newsreader", serif;
   font-size: 5em;
   font-weight: 600;
   text-transform: uppercase;
@@ -49,12 +48,11 @@
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  text-transform: capitalize; 
+  text-transform: capitalize;
 }
 
 .vibrant {
-  background: linear-gradient(to right,violet,indigo,#00f);
-    background-clip: border-box;
+  background: linear-gradient(to right, violet, indigo, #00f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -65,12 +63,12 @@
   align-items: center;
   gap: 20px;
 }
+
 .hero-links a {
   text-decoration: none;
-  color: black;
+  color: var(--primary-gray);
   padding: 10px;
   background: black;
-  color: var(--primary-gray);
   font-weight: 600;
   border-radius: 3px;
   font-size: 1.2rem;
@@ -85,28 +83,198 @@
   gap: 10px;
   padding: 2rem;
   margin-top: 2rem;
-  
 }
 
 .hero-news h1 {
   font-size: 3rem;
   text-align: center;
-  font-family: "Newsreader", "serif";
+  font-family: "Newsreader", serif;
   font-weight: 600;
   text-transform: uppercase;
   width: 100%;
-  border-top: 2px black solid;
-  border-bottom: 2px black solid;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
   padding: 1rem;
 }
 
-.hero-news p {
-  font-size: 1.2rem;
-  font-weight: 500;
+.news-desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 1rem;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.news-img {
+  flex: 1 1 40%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3; /* Keeps the image aspect ratio consistent */
+  filter: grayscale(1) contrast(1.4) brightness(1);
+}
+
+.news-img p {
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+  color: black;
+  text-align: justify;
+  width: 100%;
+}
+
+.news-actual {
+  flex: 1 1 50%;
+  max-width: 80%;
+  padding: 0 1rem;
+}
+
+.news-actual > p {
+  font-family: Georgia, serif;
+  font-size: 1rem;
   text-align: justify;
   column-count: 2;
-  column-gap: 2rem;
-  column-rule: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 0 2rem;
-  line-height: 1.6;
+  column-gap: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-desc h1 {
+    font-size: 4em;
+  }
+
+  .hero-desc p {
+    font-size: 1.5rem;
+  }
+
+  .hero-links a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 1rem;
+    flex-direction: column-reverse;
+    border: 2px solid black;
+    width: 90%;
+    margin: auto 5%;
+  }
+
+
+  .hero-img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .hero-desc {
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .hero-desc h1 {
+    font-size: 3em;
+  }
+
+  .hero-desc p {
+    font-size: 1.2rem;
+  }
+
+  .hero-news h1 {
+    font-size: 2rem;
+  }
+
+  .news-desc {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .news-img, .news-actual {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .news-actual {
+    padding: 0;
+  }
+
+  .news-actual > p {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    min-height: 90vh;
+  }
+
+  .hero-content {
+    padding: 1rem;
+    flex-direction: column-reverse;
+    border: 2px solid black;
+    width: 90%;
+    margin: auto 5%;
+  }
+
+  .hero-desc {
+    padding: 1rem;
+    border: none;
+  }
+
+  .hero-desc h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-desc p {
+    font-size: 1rem;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-news {
+    padding: 1rem;
+    width: 90%;
+    margin: auto 5%;
+  }
+
+  .hero-news h1 {
+    font-size: 1.5rem;
+  }
+
+  .news-img {
+    width: 100%;
+  }
+
+  .news-img p {
+    font-size: 0.8rem;
+  }
+
+  .news-actual > p {
+    font-size: 0.9rem;
+  }
+
+
 }

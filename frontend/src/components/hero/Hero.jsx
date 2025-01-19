@@ -3,6 +3,8 @@ import "./Hero.css";
 
 function Hero() {
   let heroImgUrl = process.env.REACT_APP_BACKEND_PORTAL + "/images/YB-HERO.jpg";
+  let heroNewsImgUrl =
+    process.env.REACT_APP_BACKEND_PORTAL + "/images/YB-NEWS.jpg";
   return (
     <>
       <section className="hero">
@@ -25,32 +27,61 @@ function Hero() {
           </div>
         </div>
         <div className="hero-news">
-          <h1>
+          <h1 className="news-heading">
             Dynamic and Committed Educator with a Vision for Student Success
           </h1>
-          <p>
-            As an enthusiastic and dedicated entry-level Assistant
-            Professor, I aspire to bring an extroverted, dynamic approach to
-            teaching and mentorship. My goal is to create an engaging and
-            inclusive learning environment that fosters critical thinking,
-            intellectual curiosity, and personal growth among students. With
-            significant experience in organizing and managing various academic
-            and extracurricular activities, I am well-prepared to take on
-            administrative and coordination responsibilities with diligence and
-            professionalism. I am committed to executing organizational tasks
-            efficiently, ensuring that my contributions align with the
-            expectations and goals of the institution. Guiding students toward
-            holistic development is a cornerstone of my teaching philosophy.
-            Beyond academic instruction, I am passionate about encouraging
-            students to participate in constructive initiatives that promote
-            creativity, teamwork, and leadership skills. By inspiring
-            involvement in both curricular and extracurricular programs, I aim
-            to cultivate well-rounded individuals who are prepared to excel in
-            their chosen paths. I am eager to contribute my energy, expertise,
-            and vision to the academic community, ensuring that my efforts lead
-            to meaningful and lasting impacts on students, colleagues, and the
-            institution as a whole.
-          </p>
+          <div className="news-desc">
+            <div className="news-img">
+              <img src={heroNewsImgUrl} alt="" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur assumenda eligendi alias voluptatibus neque nulla
+                accusamus magnam reprehenderit delectus nam et velit, voluptate
+                esse. Reiciendis labore eveniet doloribus quod aut.
+              </p>
+            </div>
+            <div className="news-actual">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                error placeat voluptatibus et beatae commodi nisi accusantium
+                quo eaque molestias odit dicta enim quasi nulla, amet expedita
+                numquam cupiditate, dolorum ea minima tempora aliquam
+                repudiandae adipisci! Voluptas esse maiores dolores in! Beatae
+                quae quaerat fugit facere eveniet tempora sint nobis assumenda
+                vitae odio nostrum ipsa, fugiat reprehenderit suscipit expedita
+                autem? Beatae, sint cumque eligendi, accusantium soluta dolores
+                atque quasi sunt possimus, animi officia nam asperiores! Quidem
+                ut soluta sunt sequi facere, itaque ratione dicta qui blanditiis
+                iste voluptates laudantium officia modi. Minus exercitationem
+                velit sunt. Quam, quae, corporis quo itaque perferendis
+                voluptate rem quasi deleniti labore minus aliquid consequuntur
+                velit aut quia dolorum ad. In suscipit ullam quae quo maiores
+                officia, harum, sed, nobis quaerat quibusdam eius hic quas
+                laudantium molestias cupiditate magni eligendi? Quaerat
+                consectetur est incidunt. Doloremque, at natus tenetur fugit
+                officia placeat ad labore excepturi repellendus consequatur
+                minus, laborum deserunt nostrum odio aut, cumque dolores debitis
+                voluptatibus eligendi molestiae assumenda. Officia nesciunt
+                aliquam eos ea tempore reprehenderit rem impedit velit culpa
+                repudiandae laboriosam voluptates libero aliquid, nihil possimus
+                voluptatum sed? Asperiores at mollitia quas ipsum rerum ullam
+                laboriosam reprehenderit nihil! Accusamus cupiditate nulla nam!
+                In velit possimus eum optio officiis? Illum suscipit iste
+                laudantium eveniet perspiciatis ipsum impedit optio eaque
+                quibusdam, corporis iure numquam. Ad dolore culpa molestiae
+                nobis, esse nam odio, voluptatem vitae amet vero quas harum
+                natus porro, voluptas rerum corporis deleniti? Natus vero in
+                voluptas repudiandae ex, ut dicta provident nisi ad consequatur
+                non suscipit, voluptatem eligendi aut ullam modi facere illo
+                fugiat deleniti aliquam praesentium repellendus labore ducimus?
+                Ab quia quae id? Illo, possimus? Vitae assumenda corrupti fugiat
+                facere dicta et sed quia quae rem quibusdam voluptatibus
+                expedita amet, quaerat alias officiis quidem distinctio quasi,
+                nostrum, cum similique consequuntur natus. Dolore, velit
+                commodi.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>

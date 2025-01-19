@@ -3,7 +3,16 @@ import React from "react";
 function Hero() {
   return (
       <>
-      <h1>Welcome to Bharathiyasu</h1>
+      <section className="hero">
+        <div className="hero-content">
+          <div className="hero-desc">
+            
+          </div>
+          <div className="hero-img">
+
+          </div>
+        </div>
+      </section>
       </>
   );
 }

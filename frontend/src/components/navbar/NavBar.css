@@ -22,7 +22,7 @@
 }
 
 .nav-bar-heading h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: "Newsreader", "serif";
     text-transform: uppercase;
     font-style: normal;
@@ -33,24 +33,6 @@
     /* align-self: start; */
 }
 
-.nav-bar-heading h1::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-}
-.nav-bar-heading h1::after {
-    content: "";
-    position: absolute;
-    top: 70%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-}
 
 
 .nav-crest {

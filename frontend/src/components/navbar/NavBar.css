@@ -1,112 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
-
 .nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 5%;
-    gap: 5%;
-    position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5%;
+  gap: 5%;
+  position: relative;
 }
 
 .nav-bar-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-    height: 100%;
-    padding: 2%;
-    /* border: 2px black solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  /* border: 2px black solid; */
 }
 
 .nav-bar-heading > h1 {
-    font-size: 430%;
-    font-family: "Newsreader", "serif";
-    text-transform: uppercase;
-    font-style: normal;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* align-self: start; */
+  font-size: 430%;
+  font-family: "Newsreader", "serif";
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* align-self: start; */
 }
 
-
-
 .nav-crest-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .nav-crest {
-    width: 80px;
-    height: auto;
-    object-fit: contain;
-    transform: translateY(-20%);
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  transform: translateY(-20%);
 }
 
 .nav-crest-container::before {
-    content: "YB";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    z-index: 10;
-    font-family: "Newsreader", "serif";
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(152, 150, 147);
+  content: "YB";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  z-index: 10;
+  font-family: "Newsreader", "serif";
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-gray);
 }
 
-
 @media screen and (max-width: 1031px) {
-    .nav-bar-heading h1 {
-        font-size: 400%;
-    }
+  .nav-bar-heading h1 {
+    font-size: 400%;
+  }
 }
 /* Mobile styles */
 @media screen and (max-width: 970px) {
-    .nav-bar {
-        padding: 1rem 2%;
-    }
+  .nav-bar {
+    padding: 1rem 2%;
+  }
 
-    .nav-bar-heading {
-        gap: 0.8rem;
-    }
+  .nav-bar-heading {
+    gap: 0.8rem;
+  }
 
-    .nav-bar-heading h1 {
-        font-size: 300% ;
-    }
+  .nav-bar-heading h1 {
+    font-size: 300%;
+  }
 
-    .nav-crest {
-        width: 40px;
-    }
+  .nav-crest {
+    width: 40px;
+  }
 
-    .nav-crest-container::before {
-        font-size: 1.2rem;
-        transform: translate(-50%, -60%);
-    }
+  .nav-crest-container::before {
+    font-size: 1.2rem;
+    transform: translate(-50%, -60%);
+  }
 }
 
 @media screen and (max-width: 680px) {
-    .nav-bar-heading h1 {
-        font-size: 200%;
-    }
+  .nav-bar-heading h1 {
+    font-size: 200%;
+  }
 }
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
-    .nav-bar-heading h1 {
-        font-size: 150%;
-    }
+  .nav-bar-heading h1 {
+    font-size: 150%;
+  }
 
-    .nav-crest {
-        width: 30px;
-    }
+  .nav-crest {
+    width: 30px;
+  }
 
-    .nav-crest-container::before {
-        font-size: .8rem;
-        transform: translate(-50%, -50%);
-    }
+  .nav-crest-container::before {
+    font-size: 0.8rem;
+    transform: translate(-50%, -50%);
+  }
 }

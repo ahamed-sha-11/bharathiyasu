@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-      <>
+    <>
       <section className="hero">
         <div className="hero-content">
           <div className="hero-desc">
@@ -13,7 +13,7 @@ function Hero() {
           </div>
         </div>
       </section>
-      </>
+    </>
   );
 }
 

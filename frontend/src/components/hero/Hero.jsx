@@ -26,7 +26,7 @@ function Hero() {
             <img src={heroImgUrl} alt="Hero" />
           </div>
         </div>
-        <div className="hero-news">
+        <div className="hero-news" id="news">
           <h1 className="news-heading">
             Dynamic and Committed Educator with a Vision for Student Success
           </h1>

@@ -7,6 +7,20 @@ function NavBar() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+
+    if (isMobileMenuOpen) {
+      document.querySelector(".nav-links").classList.add("active");
+      document.querySelector("body").style.overflowY = "hidden";
+      document.querySelector(".material-symbols-outlined").classList.add("close");
+      document.querySelector(".material-symbols-outlined").classList.remove("hamburger");
+      document.querySelector(".material-symbols-outlined").textContent = "close";
+    } else {
+      document.querySelector(".nav-links").classList.remove("active");
+      document.querySelector("body").style.overflowY = "auto";
+      document.querySelector(".material-symbols-outlined").classList.remove("close");
+      document.querySelector(".material-symbols-outlined").classList.add("hamburger");
+      document.querySelector(".material-symbols-outlined").textContent = "menu";
+    }
   };
 
   return (
@@ -21,7 +35,7 @@ function NavBar() {
         </div>
 
         <div className="nav-links">
-          <a href="#">about</a>
+          <a href="#news">about</a>
           <a href="#">career</a>
           <a href="#">events</a>
           <a href="#">blog</a>

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 
 function NavBar() {
   let crestUrl = process.env.REACT_APP_BACKEND_PORTAL + "/images/YB.svg";
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
       <div className="nav-bar">
@@ -13,6 +19,20 @@ function NavBar() {
           </div>
           <h1>Bharathi</h1>
         </div>
+
+        <div className="nav-links">
+          <a href="#">about</a>
+          <a href="#">career</a>
+          <a href="#">events</a>
+          <a href="#">blog</a>
+        </div>
+
+        <span
+          class="material-symbols-outlined hamburger"
+          onClick={toggleMobileMenu}
+        >
+          menu
+        </span>
       </div>
     </>
   );

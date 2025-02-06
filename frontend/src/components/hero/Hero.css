@@ -54,6 +54,7 @@
 .vibrant {
   background: linear-gradient(to right, violet, indigo, #00f);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -163,6 +164,22 @@
   }
 }
 
+@media (max-width: 900px) {
+  .news-actual {
+    flex-direction: column;
+    flex: 1 1 100%;
+  }
+
+  .hero-desc h1 {
+    font-size: 3em;
+  }
+
+  .hero-desc p {
+    font-size: 1.2rem;
+  }
+
+}
+
 @media (max-width: 768px) {
   .hero-content {
     padding: 1rem;
@@ -193,6 +210,9 @@
     font-size: 1.2rem;
   }
 
+  .hero-news {
+    padding: 0;
+  }
   .hero-news h1 {
     font-size: 2rem;
   }
@@ -215,6 +235,8 @@
   .news-actual > p {
     column-count: 1;
   }
+
+  
 }
 
 @media (max-width: 480px) {

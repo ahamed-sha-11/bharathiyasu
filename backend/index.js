@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import routeHandler from './router.js';
 
 // Configure dotenv
 dotenv.config();
@@ -16,10 +17,15 @@ const PORT = process.env.PORT;
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Optional: Create additional routes
-app.get('/', (req, res) => {
-  res.send('Welcome to the Home Page!');
+
+app.use('/', routeHandler);
+
+
+app.get('*', function (req, res) {
+    res.send('Sorry, this is an invalid URL.');
 });
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

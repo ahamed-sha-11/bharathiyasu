@@ -1,14 +1,16 @@
 import React from 'react';
-import Hero from './components/hero/Hero';
-import NavBar from './components/navbar/NavBar';
+import Home from './components/home/Home';
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
+import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <Hero></Hero>
-    </div>
+    <Routes>
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<Home />} />
+    </Routes>
   );
 }
 

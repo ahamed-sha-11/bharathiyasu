@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./NavBar.css";
 
 function NavBar() {
-  let crestUrl = process.env.REACT_APP_BACKEND_PORTAL + "/images/YB.svg";
+  const backendPortal = process.env.REACT_APP_BACKEND_PORTAL || "";
+  const crestUrl = `${backendPortal}/images/YB.svg`;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -37,12 +38,12 @@ function NavBar() {
         <div className="nav-links">
           <a href="#news">about</a>
           <a href="#">career</a>
-          <a href="#">events</a>
+          <a href="#">publications</a>
           <a href="#">blog</a>
         </div>
 
         <span
-          class="material-symbols-outlined hamburger"
+          className="material-symbols-outlined hamburger"
           onClick={toggleMobileMenu}
         >
           menu

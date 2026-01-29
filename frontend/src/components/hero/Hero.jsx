@@ -4,6 +4,7 @@ import "./Hero.css";
 function Hero() {
   const backendPortal = process.env.REACT_APP_BACKEND_PORTAL || "";
   const heroImgUrl = `${backendPortal}/images/YB-HERO.jpg`;
+  const heroResumeUrl = `${backendPortal}/docs/resume.pdf`;
   let heroNewsImgUrl =
     `${backendPortal}/images/YB-NEWS.jpg`;
   return (
@@ -19,7 +20,7 @@ function Hero() {
               energy and a contagious enthusiasm for teaching
             </p>
             <div className="hero-links">
-              <a href="#">resume</a>
+              <a href={heroResumeUrl} target="_blank">resume</a>
               <a href="#">get in touch</a>
             </div>
           </div>

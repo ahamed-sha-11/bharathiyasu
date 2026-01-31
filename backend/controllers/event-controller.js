@@ -1,5 +1,5 @@
 import { Router } from "express";
-import eventService from "../service/event-service";
+import eventService from "../service/event-service.js";
 
 let eventController = Router();
 

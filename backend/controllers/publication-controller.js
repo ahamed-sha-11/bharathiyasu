@@ -53,7 +53,12 @@ publicationsController.patch('/:id', async (req, res) => {
         };
 
         const updatedPublication = await publicationService.updatePublication(req.params.id, publicationData);
-        res.status(200).json(updatedPublication);
+
+        if (updatedPublication === 0) {
+            return res.status(404).json({ error: `No publication found with id: ${req.params.id}` });
+        }
+
+        res.status(200).json();
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

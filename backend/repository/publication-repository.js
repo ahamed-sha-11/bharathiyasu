@@ -9,6 +9,14 @@ class PublicationRepository {
             console.error(error);
         }
     }
+
+    addPublication(publicationData) {
+        try {
+            return Publication.create(publicationData);
+        } catch (error) {
+            console.error(error);
+        }
+    }
 }
 
 export default new PublicationRepository();

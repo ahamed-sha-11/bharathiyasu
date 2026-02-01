@@ -2,12 +2,21 @@ import publicationRepository from '../repository/publication-repository.js';
 
 class PublicationService {
 
-    getAllPublications = async (req, res) => {
+    getAllPublications = async () => {
         try {
-            const publications = await publicationRepository.getAllPublications();
-            res.status(200).json(publications);
+            return await publicationRepository.getAllPublications();
         } catch (error) {
-            res.status(500).json({ error: error.message });
+            throw error;
+        }
+    }
+
+    addPublication = async (publicationData) => {
+        try {
+
+            const newPublication = await publicationRepository.addPublication(publicationData);
+            return newPublication;
+        } catch (error) {
+            throw error;
         }
     }
 }

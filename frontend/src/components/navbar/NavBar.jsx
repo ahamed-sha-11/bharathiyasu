@@ -37,8 +37,8 @@ function NavBar() {
 
         <div className="nav-links">
           <a href="#news">about</a>
-          <a href="#">career</a>
           <a href="#">publications</a>
+          <a href="#">career</a>
           <a href="#">blog</a>
         </div>
 

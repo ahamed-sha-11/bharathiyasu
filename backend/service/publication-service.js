@@ -19,6 +19,15 @@ class PublicationService {
             throw error;
         }
     }
+
+    updatePublication = async (id, publicationData) => {
+        try {
+            const updatedPublication = await publicationRepository.updatePublication(id, publicationData);
+            return updatedPublication;
+        } catch (error) {
+            throw error;
+        }
+    }
 }
 
 export default new PublicationService();

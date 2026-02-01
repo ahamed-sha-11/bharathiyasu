@@ -21,7 +21,7 @@ function Hero() {
             </p>
             <div className="hero-links">
               <a href={heroResumeUrl} target="_blank">resume</a>
-              <a href="#">get in touch</a>
+              <a href="mailto:ybharathirasul@gmail.com">get in touch</a>
             </div>
           </div>
           <div className="hero-img">

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./NavBar.css";
 
 function NavBar() {
-  const backendPortal = process.env.REACT_APP_BACKEND_PORTAL || "";
-  const crestUrl = `${backendPortal}/images/YB.svg`;
+  const crestUrl = "/YB.svg";
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {

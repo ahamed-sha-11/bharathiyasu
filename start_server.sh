@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# Wrapper script that proxies to start_servers.sh for backward compatibility
-# Added support for -d / --dev to run both backend and frontend in dev mode.
+# Frontend-only startup script
+# Starts the React development server
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+echo "⚛️ Starting frontend..."
+cd "$SCRIPT_DIR/frontend" || exit
+
+npm install
+
 if [[ "$1" == "-d" || "$1" == "--dev" ]]; then
-  "$SCRIPT_DIR/start_servers.sh" --dev
+  npm run dev
 else
-  "$SCRIPT_DIR/start_servers.sh" "$@"
+  npm run build && npm run preview
 fi

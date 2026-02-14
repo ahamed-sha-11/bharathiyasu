@@ -1,34 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import publicationsData from "../../data/publications.json";
 import "./publications.css";
 
 function Publications() {
-    const backendPortal = process.env.REACT_APP_BACKEND_PORTAL || "http://localhost:8423";
-    const publicationsUrl = `${backendPortal}/publications`;
-
-    const [publications, setPublications] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchPublications = async () => {
-            try {
-                const response = await fetch(publicationsUrl);
-                if (!response.ok) throw new Error("Failed to fetch");
-
-                const data = await response.json();
-                setPublications(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchPublications();
-    }, [publicationsUrl]);
-
-    if (loading) return <p>Loading publications...</p>;
-    if (error) return <p>Error: {error}</p>;
+    const publications = publicationsData;
 
     return (
         <section className="publications-section" id="publications">

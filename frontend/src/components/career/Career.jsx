@@ -1,34 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import careersData from "../../data/careers.json";
 import "./career.css";
 
 export default function Career() {
-  const backend =
-    process.env.REACT_APP_BACKEND_PORTAL || "http://localhost:8423";
-  const careersUrl = `${backend}/careers`;
-
-  const [careers, setCareers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchCareers = async () => {
-      try {
-        const res = await fetch(careersUrl);
-        if (!res.ok) throw new Error("Failed to fetch careers");
-        const data = await res.json();
-        setCareers(data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchCareers();
-  }, [careersUrl]);
-
-  if (loading) return <p>Loading career…</p>;
-  if (error) return <p>Error: {error}</p>;
+  const careers = careersData;
 
   return (
     <section className="career-section" id="career">

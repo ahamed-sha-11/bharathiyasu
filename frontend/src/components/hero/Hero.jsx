@@ -2,11 +2,9 @@ import React from "react";
 import "./Hero.css";
 
 function Hero() {
-  const backendPortal = process.env.REACT_APP_BACKEND_PORTAL || "";
-  const heroImgUrl = `${backendPortal}/images/YB-HERO.jpg`;
-  const heroResumeUrl = `${backendPortal}/docs/resume.pdf`;
-  let heroNewsImgUrl =
-    `${backendPortal}/images/YB-NEWS.jpg`;
+  const heroImgUrl = "/YB-HERO.jpg";
+  const heroResumeUrl = "/docs/resume.pdf";
+  let heroNewsImgUrl = "/YB-NEWS.jpg";
   return (
     <>
       <section className="hero">

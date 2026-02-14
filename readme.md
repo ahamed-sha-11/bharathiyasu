@@ -1,26 +1,29 @@
 # Bharathiyasu
 
-A full-stack web application built with React and Node.js/Express.
+A frontend-only React web application with static JSON data.
 
 ## Project Structure
 
 ```
 .
-├── backend/           # Node.js/Express backend
-│   ├── configs/      # Configuration files
-│   ├── controllers/  # API controllers
-│   ├── service/      # Business logic services
-│   ├── public/       # Static files
-│   ├── index.js      # Entry point
-│   └── router.js     # API routing
-├── frontend/         # React frontend
+├── frontend/              # React frontend application
 │   ├── src/
-│   │   ├── components/  # React components
-│   │   ├── App.jsx      # Main application component
-│   │   ├── main.jsx     # Entry point
-│   │   └── App.css      # Application styles
-├── start_server.sh   # Server startup script
-└── start_servers.sh  # Multi-server startup script
+│   │   ├── components/    # React components (Hero, NavBar, Publications, Career)
+│   │   ├── data/          # JSON data files (careers.json, publications.json)
+│   │   ├── App.jsx        # Main application component
+│   │   ├── main.jsx       # Entry point
+│   │   └── App.css        # Application styles
+│   ├── public/            # Static assets
+│   │   ├── YB-HERO.jpg    # Hero image
+│   │   ├── YB-NEWS.jpg    # News image
+│   │   ├── YB.svg         # Logo/Crest
+│   │   └── docs/
+│   │       └── resume.pdf # Resume document
+│   ├── package.json
+│   └── vite.config.js
+├── start_server.sh        # Frontend startup script
+├── start_servers.sh       # Frontend startup script (alias)
+└── readme.md
 ```
 
 ## Prerequisites
@@ -33,15 +36,7 @@ A full-stack web application built with React and Node.js/Express.
 1. Install dependencies:
 
 ```bash
-# Install root dependencies
-npm install
-
-# Install frontend dependencies
 cd frontend
-npm install
-
-# Install backend dependencies
-cd ../backend
 npm install
 ```
 
@@ -50,41 +45,59 @@ npm install
 Start the application using the provided scripts:
 
 ```bash
-# Start both servers
-./start_servers.sh
+# Start frontend development server
+./start_server.sh -d
 
-# Or start individual servers
-./start_server.sh frontend  # Start only frontend
-./start_server.sh backend   # Start only backend
+# Or without the script
+cd frontend
+npm run dev
 ```
 
-The application will be available at `http://localhost:3000`
+The application will be available at `http://localhost:5173` (or the port configured in your Vite setup)
 
 ## Development
 
 To run the application in development mode:
 
 ```bash
-# Start frontend in development mode
 cd frontend
-npm start
-
-# Start backend in development mode
-cd backend
 npm run dev
+```
+
+## Building
+
+To build the application for production:
+
+```bash
+cd frontend
+npm run build
 ```
 
 ## Scripts
 
-Available npm scripts:
+Available npm scripts in the frontend folder:
 
 - `npm install`: Install dependencies
-- `npm start`: Start the application
 - `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run preview`: Preview production build
 
-Additional scripts:
-- `./start_server.sh`: Start individual server (frontend or backend)
-- `./start_servers.sh`: Start both frontend and backend servers
+## Data Sources
+
+The application uses static JSON data files located in `src/data/`:
+
+- **careers.json**: Professional career history
+- **publications.json**: Academic publication records
+
+All data is imported directly into React components as ES modules.
+
+## Features
+
+- ✅ Frontend-only React application
+- ✅ No backend API calls
+- ✅ Static JSON data sources
+- ✅ Responsive design
+- ✅ Professional portfolio layout
 
 ## Contributing
 

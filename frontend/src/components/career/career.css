@@ -1,0 +1,93 @@
+.career-section {
+    width: 100%;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    font-family: "Newsreader", serif;
+    color: #111;
+}
+
+.career-section h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 1.8rem 0;
+    margin: 0 1%;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.career-container {
+    width: 100%;
+    padding: 2rem;
+}
+
+.career-timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.career-timeline::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #000;
+}
+
+.career-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.career-item::before {
+    content: "";
+    position: absolute;
+    left: -0.35rem;
+    top: 0.4rem;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.career-item h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.career-org {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.career-org em {
+    font-style: italic;
+}
+
+.career-date {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.career-divider {
+    width: 100%;
+    height: 1px;
+    background: #aaa;
+    margin-top: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .career-timeline {
+        padding-left: 2.5rem;
+    }
+
+    .career-item {
+        padding-left: 1.5rem;
+    }
+}

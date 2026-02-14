@@ -49,32 +49,32 @@
 }
 
 .career-position {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0 0 0.3rem 0;
-    color: #222;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #000;
 }
 
 .career-org {
-    font-size: 1rem;
-    margin: 0.2rem 0;
-    color: #444;
-    font-weight: 500;
+    font-size: 1.05rem;
+    margin: 0.3rem 0;
+    color: #333;
+    font-weight: 600;
 }
 
 .career-date {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 0.4rem 0 0 0;
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0.5rem 0 0 0;
     font-style: italic;
 }
 
 .career-description {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.8rem;
     text-align: justify;
-    color: #333;
+    color: #222;
 }
 
 .career-highlights {
@@ -97,12 +97,12 @@
 }
 
 .career-highlights li {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 0.6rem;
-    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 0.8rem;
+    padding-left: 1.8rem;
     position: relative;
-    color: #333;
+    color: #222;
 }
 
 .career-highlights li::before {

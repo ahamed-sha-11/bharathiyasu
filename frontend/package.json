@@ -1,6 +1,7 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "bharathiyasu-portfolio",
+  "version": "1.0.0",
+  "description": "Dr. Yasu Bharathi - Professional Portfolio Website",
   "private": true,
   "dependencies": {
     "react": "^19.0.0",
@@ -15,5 +16,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-  }
+  },
+  "keywords": [
+    "portfolio",
+    "education",
+    "literature",
+    "academic"
+  ],
+  "license": "MIT"
 }

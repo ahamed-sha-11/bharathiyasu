@@ -8,7 +8,7 @@
     "publication_date": "2024-12-15",
     "category": "Education",
     "tags": ["pedagogy", "literature", "teaching", "student engagement"],
-    "image": null,
+    "image": "https://picsum.photos/600/350?random=1",
     "createdAt": "2024-12-15T10:30:00.000Z",
     "updatedAt": "2024-12-15T10:30:00.000Z"
   },
@@ -21,7 +21,7 @@
     "publication_date": "2024-11-08",
     "category": "Culture",
     "tags": ["comparative literature", "cultural studies", "diversity", "understanding"],
-    "image": null,
+    "image": "https://picsum.photos/600/350?random=2",
     "createdAt": "2024-11-08T14:45:00.000Z",
     "updatedAt": "2024-11-08T14:45:00.000Z"
   },
@@ -34,8 +34,73 @@
     "publication_date": "2024-10-22",
     "category": "Literary Analysis",
     "tags": ["modernism", "literature", "narrative technique", "contemporary"],
-    "image": null,
+    "image": "https://picsum.photos/600/350?random=3",
     "createdAt": "2024-10-22T09:15:00.000Z",
     "updatedAt": "2024-10-22T09:15:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "Digital Literacy and the Future of English Education",
+    "excerpt": "Exploring how technology and digital platforms are transforming the landscape of English language teaching and literary studies in the classroom.",
+    "content": "The digital revolution has fundamentally altered how we consume, create, and analyze texts. As educators, we must adapt our teaching methodologies to prepare students for a world where digital literacy is as essential as traditional reading and writing skills. From online collaborative platforms to AI-based writing analysis tools, technology offers unprecedented opportunities to enhance learning outcomes. This article explores practical strategies for integrating digital tools into English curriculum while maintaining focus on critical thinking and deep textual analysis that forms the foundation of literary studies.",
+    "author": "Dr. Yasu Bharathi",
+    "publication_date": "2024-09-30",
+    "category": "EdTech",
+    "tags": ["digital literacy", "teaching", "technology", "education", "innovation"],
+    "image": "https://picsum.photos/600/350?random=4",
+    "createdAt": "2024-09-30T11:20:00.000Z",
+    "updatedAt": "2024-09-30T11:20:00.000Z"
+  },
+  {
+    "id": 5,
+    "title": "Postcolonial Voices: Reshaping the English Canon",
+    "excerpt": "An exploration of how postcolonial literature challenges traditional Western literary canons and offers new perspectives on identity, power, and representation.",
+    "content": "For centuries, the English literary canon has been dominated by voices from Britain and America, often marginalizing or excluding contributions from writers in colonized nations. Postcolonial literature emerged as a powerful response, challenging these hierarchies and asserting the validity and importance of diverse literary traditions. Authors such as Chinua Achebe, Arundhati Roy, and Salman Rushdie have reshaped our understanding of what literature can be. By incorporating postcolonial texts into our curricula, we not only diversify the voices students encounter but also teach them to question power structures, recognize how language itself is a site of political struggle, and appreciate the rich literary traditions of the Global South.",
+    "author": "Dr. Yasu Bharathi",
+    "publication_date": "2024-09-10",
+    "category": "Literary Theory",
+    "tags": ["postcolonial", "literature", "canon", "representation", "cultural studies"],
+    "image": "https://picsum.photos/600/350?random=5",
+    "createdAt": "2024-09-10T15:35:00.000Z",
+    "updatedAt": "2024-09-10T15:35:00.000Z"
+  },
+  {
+    "id": 6,
+    "title": "The Power of Narrative: Storytelling as a Teaching Tool",
+    "excerpt": "Understanding how narrative structures shape human understanding and exploring effective narrative-based teaching strategies for engaging learners.",
+    "content": "Humans are fundamentally storytellers. From ancient cave paintings to modern cinema, we organize our experiences and understanding of the world through narratives. In the English classroom, recognizing and leveraging this innate love of storytelling can be transformative. Narrative pedagogy goes beyond simply telling stories; it involves helping students understand how narratives function, how they shape perspective, and how they can be tools for both understanding and change. When students study how authors construct narratives to create meaning, influence emotions, and challenge assumptions, they develop skills that extend far beyond literature into critical thinking across all disciplines.",
+    "author": "Dr. Yasu Bharathi",
+    "publication_date": "2024-08-25",
+    "category": "Pedagogy",
+    "tags": ["narrative", "teaching", "storytelling", "pedagogy", "learning"],
+    "image": "https://picsum.photos/600/350?random=6",
+    "createdAt": "2024-08-25T13:10:00.000Z",
+    "updatedAt": "2024-08-25T13:10:00.000Z"
+  },
+  {
+    "id": 7,
+    "title": "Assessment Beyond the Exam: Innovative Evaluation Methods in Literature",
+    "excerpt": "Exploring alternative assessment strategies that better capture student learning and encourage deeper engagement with literature beyond traditional testing.",
+    "content": "Traditional exams measure only a narrow slice of student learning and often fail to capture the depth of understanding students develop through literary study. Alternative assessment methods—such as creative projects, portfolio assessments, peer reviews, and digital presentations—offer richer pictures of learning. When students are asked to create something new, defend their interpretations, or present their analysis in multimedia formats, they engage with literature more meaningfully. This article discusses various assessment strategies that encourage student agency, creativity, and critical thinking while providing instructors with comprehensive insights into learning outcomes.",
+    "author": "Dr. Yasu Bharathi",
+    "publication_date": "2024-08-05",
+    "category": "Assessment",
+    "tags": ["assessment", "evaluation", "student engagement", "alternative methods", "education"],
+    "image": "https://picsum.photos/600/350?random=7",
+    "createdAt": "2024-08-05T10:45:00.000Z",
+    "updatedAt": "2024-08-05T10:45:00.000Z"
+  },
+  {
+    "id": 8,
+    "title": "Building Communities of Readers: Creating Classroom Cultures That Value Literature",
+    "excerpt": "How to foster a genuine love of reading and literary discussion by creating inclusive, supportive classroom environments that celebrate diverse reading experiences.",
+    "content": "One of the greatest challenges educators face is inspiring students to view literature not as an obligation but as a source of joy and insight. Building a community of readers requires deliberate effort to create spaces where diverse voices are welcomed, where questions are encouraged, and where reading is celebrated. This involves diverse text selection that reflects students' identities and interests, reader response circles where students share personal interpretations, and an explicit focus on the transformative potential of literature. When students see their teachers as fellow readers with genuine enthusiasm for texts, when they encounter stories that mirror their experiences, and when they have opportunities to discuss literature in authentic ways, they become lifelong readers.",
+    "author": "Dr. Yasu Bharathi",
+    "publication_date": "2024-07-18",
+    "category": "Community",
+    "tags": ["community", "reading culture", "student engagement", "inclusive education", "literature"],
+    "image": "https://picsum.photos/600/350?random=8",
+    "createdAt": "2024-07-18T16:20:00.000Z",
+    "updatedAt": "2024-07-18T16:20:00.000Z"
   }
 ]

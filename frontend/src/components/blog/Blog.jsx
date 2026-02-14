@@ -129,6 +129,19 @@ export default function Blog() {
           {filteredBlogs.length > 0 ? (
             filteredBlogs.map((blog, index) => (
               <article key={blog.id} className="blog-card">
+                {blog.image && (
+                  <div className="blog-image-wrapper">
+                    <img 
+                      src={blog.image} 
+                      alt={blog.title} 
+                      className="blog-image"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.parentElement.style.backgroundColor = '#d3d3d3';
+                      }}
+                    />
+                  </div>
+                )}
                 <div className="blog-header">
                   <h2 className="blog-title">{blog.title}</h2>
                   <p className="blog-meta">

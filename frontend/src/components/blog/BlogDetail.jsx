@@ -45,6 +45,20 @@ export default function BlogDetail() {
           ← Back
         </button>
 
+        {blog.image && (
+          <div className="blog-detail-image-wrapper">
+            <img 
+              src={blog.image} 
+              alt={blog.title} 
+              className="blog-detail-image"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.parentElement.style.backgroundColor = '#d3d3d3';
+              }}
+            />
+          </div>
+        )}
+
         <header className="blog-detail-header">
           <h1 className="blog-detail-title">{blog.title}</h1>
           <div className="blog-detail-meta">

@@ -16,4 +16,5 @@
 
 body {
   background: var(--primary-gray);
+  color: #111;
 }

@@ -20,74 +20,134 @@
 
 .career-container {
     width: 100%;
-    padding: 2rem;
+    padding: 2.5rem 3rem;
 }
 
-.career-timeline {
+.career-articles {
     position: relative;
-    padding-left: 3rem;
 }
 
-.career-timeline::before {
-    content: "";
-    position: absolute;
-    left: 1rem;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #000;
-}
-
-.career-item {
-    position: relative;
+.career-article {
     margin-bottom: 3rem;
-    padding-left: 2rem;
+    padding-bottom: 3rem;
 }
 
-.career-item::before {
-    content: "";
-    position: absolute;
-    left: -0.35rem;
-    top: 0.4rem;
-    width: 10px;
-    height: 10px;
-    background: #000;
-    border-radius: 50%;
+.career-header {
+    margin-bottom: 1.5rem;
 }
 
-.career-item h3 {
-    font-size: 1.35rem;
+.career-headline {
+    font-size: 1.75rem;
     font-weight: 700;
-    margin-bottom: 0.3rem;
+    line-height: 1.3;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.3px;
+}
+
+.career-meta {
+    margin-bottom: 1.5rem;
+}
+
+.career-position {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+    color: #222;
 }
 
 .career-org {
     font-size: 1rem;
-    margin-bottom: 0.25rem;
-}
-
-.career-org em {
-    font-style: italic;
+    margin: 0.2rem 0;
+    color: #444;
+    font-weight: 500;
 }
 
 .career-date {
     font-size: 0.9rem;
-    color: #444;
+    color: #666;
+    margin: 0.4rem 0 0 0;
+    font-style: italic;
+}
+
+.career-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: #333;
+}
+
+.career-highlights {
+    margin-bottom: 1.5rem;
+}
+
+.career-highlights h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 1rem 0;
+    color: #111;
+}
+
+.career-highlights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.career-highlights li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #333;
+}
+
+.career-highlights li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }
 
 .career-divider {
     width: 100%;
     height: 1px;
-    background: #aaa;
-    margin-top: 1.2rem;
+    background: #ddd;
+    margin: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .career-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .career-headline {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 600px) {
-    .career-timeline {
-        padding-left: 2.5rem;
+    .career-section {
+        padding: 0 1rem;
     }
 
-    .career-item {
-        padding-left: 1.5rem;
+    .career-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .career-headline {
+        font-size: 1.2rem;
+    }
+
+    .career-position {
+        font-size: 1rem;
+    }
+
+    .career-description {
+        font-size: 0.95rem;
+        text-align: left;
     }
 }

@@ -1,20 +1,66 @@
 [
   {
     "id": 1,
-    "position": "Assistant Professor of English",
-    "firm": "V. O. Chidambaram College, Thoothukudi",
-    "start_date": "2021-10-01",
-    "end_date": "2022-12-01",
-    "createdAt": "2026-02-01T22:03:37.000Z",
-    "updatedAt": "2026-02-01T22:03:37.000Z"
+    "position": "Assistant Professor - PG & Research Department of English",
+    "firm": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science & Technology, Chennai, India",
+    "start_date": "2023-07-01",
+    "end_date": null,
+    "headline": "Spearheading Research Innovation and Literary Excellence at a Premier R&D Institute",
+    "description": "Leading postgraduate and research initiatives in the Department of English at Vel Tech R&D Institute. Spearheading the English Literary Association (ELA) with conceptualization and execution of literary events, competitions, workshops, and guest lectures to enhance linguistic and creative competencies. Overseeing the English Language Laboratory to ensure seamless delivery of ICT-based learning with practical sessions and pedagogical software. Strengthening departmental online presence and institutional brand visibility through social media coordination.",
+    "highlights": [
+      "Spearheading English Literary Association (ELA) events, competitions, and workshops for enhanced linguistic competencies",
+      "Overseeing English Language Laboratory operations ensuring ICT-based learning delivery and software maintenance",
+      "Managing departmental online presence as Social Media Coordinator for institutional brand visibility",
+      "Implementing learner-centered teaching strategies blending digital tools with classroom instruction",
+      "Mentoring PG scholars and coordinating departmental research excellence initiatives"
+    ]
   },
   {
     "id": 2,
-    "position": "Assistant Professor of English",
-    "firm": "Geetha Jeevan Arts & Science College, Thoothukudi",
+    "position": "Assistant Professor - Department of English",
+    "firm": "Geetha Jeevan Arts & Science College, Thoothukudi, India",
     "start_date": "2023-01-01",
-    "end_date": null,
-    "createdAt": "2026-02-01T16:55:28.000Z",
-    "updatedAt": "2026-02-01T16:55:28.000Z"
+    "end_date": "2023-06-30",
+    "headline": "Fostering Academic Research Ecosystem and Cultural Development",
+    "description": "Promoted departmental research ecosystem as R&D Coordinator, guiding student research, facilitating documentation, and coordinating academic development activities. Directed the Arts & Drama Club, organizing cultural events, designing performance activities, and enabling experiential learning in theatre arts. Managed departmental outreach through social media content creation, highlighting academic achievements and student activities. Served as Academic & Placement Mentor, providing career guidance, soft-skills training, resume coaching, and interview preparation for English major students.",
+    "highlights": [
+      "Promoted research ecosystem as R&D Coordinator, guiding student research and academic development",
+      "Directed Arts & Drama Club, organizing cultural events and theatre performance activities",
+      "Managed departmental outreach through social media content creation and visibility enhancement",
+      "Served as Academic & Placement Mentor for English major students with career guidance and soft-skills training",
+      "Coordinated experiential learning activities and student mentorship programs"
+    ]
+  },
+  {
+    "id": 3,
+    "position": "Assistant Professor - PG & Research Department of English",
+    "firm": "V.O. Chidambaram College, Thoothukudi, India",
+    "start_date": "2022-02-01",
+    "end_date": "2022-12-31",
+    "headline": "Advancing Academic Quality and Student Empowerment in Higher Education",
+    "description": "Contributed to Youth Welfare Department initiatives by coordinating leadership sessions, community outreach programs, and civic engagement activities. Ensured quality compliance as IQAC Department Representative, preparing academic reports, documentation, audit support materials, and NAAC-aligned quality metrics. Delivered academic mentoring for undergraduate students, supporting study planning, higher education pathways, and employability skill development.",
+    "highlights": [
+      "Contributed to Youth Welfare Department initiatives with leadership sessions and community outreach",
+      "Ensured quality compliance as IQAC Department Representative with NAAC-aligned metrics",
+      "Prepared academic reports, documentation, and audit support materials for institutional accreditation",
+      "Delivered academic mentoring for UG students with focus on study planning and career pathways",
+      "Supported employability skill development and higher education pathway guidance"
+    ]
+  },
+  {
+    "id": 4,
+    "position": "Research Scholar (Full-Time) - PG & Research Department of English",
+    "firm": "V.O. Chidambaram College, Thoothukudi, India",
+    "start_date": "2018-07-01",
+    "end_date": "2022-01-31",
+    "headline": "Building Research Foundation and Leading Academic Support Initiatives",
+    "description": "Acted as Student Coordinator in Youth Welfare Department, managing student participation in empowerment programs and campus-based initiatives. Led the Youth Research Hub, guiding junior scholars, promoting collaborative research activities, and supporting departmental seminars. Assisted the Department Journal Committee with article review, proofreading, content selection, and publication workflows. Published 3 Scopus-indexed research papers and multiple UGC-approved/peer-reviewed articles in national and international journals.",
+    "highlights": [
+      "Published 3 Scopus-indexed research papers in national and international journals",
+      "Authored 1 academic book and contributed 5 book chapters across reputed publishers",
+      "Served as Editor/Associate Editor for 3 academic volumes ensuring publication quality",
+      "Led Youth Research Hub guiding junior scholars and promoting collaborative research activities",
+      "Delivered 13+ invited lectures, keynotes, and resource sessions across leading institutions"
+    ]
   }
 ]

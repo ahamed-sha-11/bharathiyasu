@@ -34,51 +34,21 @@ function Hero() {
             <div className="news-img">
               <img src={heroNewsImgUrl} alt="" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur assumenda eligendi alias voluptatibus neque nulla
-                accusamus magnam reprehenderit delectus nam et velit, voluptate
-                esse. Reiciendis labore eveniet doloribus quod aut.
+                Dr. Yasu Bharathi is an accomplished Assistant Professor of English with a passion for literary analysis, cultural studies, and innovative pedagogy. With expertise in postcolonial literature, contemporary Indian writing, and American literature, she brings a dynamic approach to English language education in South Indian institutions.
               </p>
             </div>
             <div className="news-actual">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                error placeat voluptatibus et beatae commodi nisi accusantium
-                quo eaque molestias odit dicta enim quasi nulla, amet expedita
-                numquam cupiditate, dolorum ea minima tempora aliquam
-                repudiandae adipisci! Voluptas esse maiores dolores in! Beatae
-                quae quaerat fugit facere eveniet tempora sint nobis assumenda
-                vitae odio nostrum ipsa, fugiat reprehenderit suscipit expedita
-                autem? Beatae, sint cumque eligendi, accusantium soluta dolores
-                atque quasi sunt possimus, animi officia nam asperiores! Quidem
-                ut soluta sunt sequi facere, itaque ratione dicta qui blanditiis
-                iste voluptates laudantium officia modi. Minus exercitationem
-                velit sunt. Quam, quae, corporis quo itaque perferendis
-                voluptate rem quasi deleniti labore minus aliquid consequuntur
-                velit aut quia dolorum ad. In suscipit ullam quae quo maiores
-                officia, harum, sed, nobis quaerat quibusdam eius hic quas
-                laudantium molestias cupiditate magni eligendi? Quaerat
-                consectetur est incidunt. Doloremque, at natus tenetur fugit
-                officia placeat ad labore excepturi repellendus consequatur
-                minus, laborum deserunt nostrum odio aut, cumque dolores debitis
-                voluptatibus eligendi molestiae assumenda. Officia nesciunt
-                aliquam eos ea tempore reprehenderit rem impedit velit culpa
-                repudiandae laboriosam voluptates libero aliquid, nihil possimus
-                voluptatum sed? Asperiores at mollitia quas ipsum rerum ullam
-                laboriosam reprehenderit nihil! Accusamus cupiditate nulla nam!
-                In velit possimus eum optio officiis? Illum suscipit iste
-                laudantium eveniet perspiciatis ipsum impedit optio eaque
-                quibusdam, corporis iure numquam. Ad dolore culpa molestiae
-                nobis, esse nam odio, voluptatem vitae amet vero quas harum
-                natus porro, voluptas rerum corporis deleniti? Natus vero in
-                voluptas repudiandae ex, ut dicta provident nisi ad consequatur
-                non suscipit, voluptatem eligendi aut ullam modi facere illo
-                fugiat deleniti aliquam praesentium repellendus labore ducimus?
-                Ab quia quae id? Illo, possimus? Vitae assumenda corrupti fugiat
-                facere dicta et sed quia quae rem quibusdam voluptatibus
-                expedita amet, quaerat alias officiis quidem distinctio quasi,
-                nostrum, cum similique consequuntur natus. Dolore, velit
-                commodi.
+                Throughout her academic career, Dr. Bharathi has demonstrated exceptional commitment to student-centered learning and rigorous scholarship. Currently at Geetha Jeevan Arts & Science College in Thoothukudi, she teaches literature and language courses to over 200 undergraduate students while actively pursuing research in postcolonial discourse and cultural representation in literature.
+              </p>
+              <p>
+                Her scholarly contributions include seven peer-reviewed publications in international journals, exploring themes of cultural identity, postcolonial perspectives, and the relevance of modernist literature in contemporary contexts. She is particularly interested in how literature serves as a medium for understanding diverse cultures and fostering critical thinking among students.
+              </p>
+              <p>
+                As an educator, Dr. Bharathi advocates for innovative pedagogical approaches that encourage students to engage deeply with texts and develop strong analytical writing skills. She believes that literary education should not only impart knowledge but also cultivate empathy, cultural awareness, and the ability to question dominant narratives. Her mentorship has guided numerous students in pursuing research projects and publications of their own.
+              </p>
+              <p>
+                Beyond classroom instruction, Dr. Bharathi actively contributes to curriculum development and academic discourse in her field. She has presented her research at national and international conferences, collaborated with colleagues on interdisciplinary projects, and served as a mentor for aspiring academics and writers.
               </p>
             </div>
           </div>

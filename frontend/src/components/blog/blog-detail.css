@@ -1,0 +1,166 @@
+.blog-detail-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-detail-container {
+  flex: 1;
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Georgia", serif;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.back-button:hover {
+  letter-spacing: 1.5px;
+}
+
+.blog-detail-header {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #000;
+}
+
+.blog-detail-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.blog-detail-meta {
+  display: flex;
+  gap: 25px;
+  font-size: 0.85rem;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.blog-detail-date {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blog-detail-category {
+  color: #999;
+  font-style: italic;
+}
+
+.blog-detail-author {
+  color: #333;
+  font-weight: 600;
+}
+
+.blog-detail-content {
+  margin-bottom: 50px;
+  line-height: 2;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.blog-detail-content p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.blog-detail-tags {
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+}
+
+.blog-detail-tags h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.blog-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.blog-tag {
+  font-size: 0.8rem;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.not-found {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-detail-container {
+    padding: 40px 20px;
+  }
+
+  .blog-detail-title {
+    font-size: 1.8rem;
+  }
+
+  .blog-detail-meta {
+    gap: 15px;
+    font-size: 0.8rem;
+  }
+
+  .blog-detail-content {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-detail-container {
+    padding: 30px 15px;
+  }
+
+  .blog-detail-title {
+    font-size: 1.4rem;
+  }
+
+  .blog-detail-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .blog-detail-content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .blog-tags-list {
+    gap: 8px;
+  }
+
+  .blog-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}

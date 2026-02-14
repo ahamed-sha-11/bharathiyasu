@@ -9,22 +9,38 @@ export default function Career() {
     <section className="career-section" id="career">
       <h1>Career</h1>
       <div className="career-container">
-        <div className="career-timeline">
+        <div className="career-articles">
           {careers.map((c, i) => (
-            <div key={c.id} className="career-item">
-              <h3>{c.position}</h3>
-              <p className="career-org">
-                {c.firm.split(",")[0]}, <em>{c.firm.split(",")[1]}</em>
-              </p>
-              <p className="career-date">
-                {formatDate(c.start_date)} —{" "}
-                {c.end_date ? formatDate(c.end_date) : "Present"}
-              </p>
+            <article key={c.id} className="career-article">
+              <div className="career-header">
+                <h2 className="career-headline">{c.headline}</h2>
+                <div className="career-meta">
+                  <h3 className="career-position">{c.position}</h3>
+                  <p className="career-org">{c.firm}</p>
+                  <p className="career-date">
+                    {formatDate(c.start_date)} —{" "}
+                    {c.end_date ? formatDate(c.end_date) : "Present"}
+                  </p>
+                </div>
+              </div>
+
+              <p className="career-description">{c.description}</p>
+
+              {c.highlights && c.highlights.length > 0 && (
+                <div className="career-highlights">
+                  <h4>Key Achievements:</h4>
+                  <ul>
+                    {c.highlights.map((highlight, idx) => (
+                      <li key={idx}>{highlight}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {i !== careers.length - 1 && (
                 <div className="career-divider" />
               )}
-            </div>
+            </article>
           ))}
         </div>
       </div>
